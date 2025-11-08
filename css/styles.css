@@ -14,8 +14,12 @@ body {
   background-color: #ffffff;
 }
 
-header,
-footer {
+header {
+  border-bottom: 1px solid black;
+}
+.nav-container {
+  max-width: 80rem;
+  margin: 0 auto;
   min-height: 4rem;
   line-height: 1.5rem;
   font-size: 1rem;
@@ -23,8 +27,17 @@ footer {
   padding: 1.25rem 2rem 1.25rem;
 }
 
-header {
-  border-bottom: 1px solid black;
+.future-logo {
+  margin-right: 1rem;
+}
+
+nav {
+  display: inline;
+}
+
+nav a {
+  margin-right: 1rem;
+  padding: 0px;
 }
 
 footer {
