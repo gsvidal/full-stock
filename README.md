@@ -1,5 +1,5 @@
 # Full Stock 
-## (Este documento está actualizado al 09/11/25)
+## (Última actualización de este documento al 09/11/25)
 
 Proyecto académico estático construido con **HTML** y **CSS**, que incluye las páginas:
 - `about.html` – Quiénes somos  
