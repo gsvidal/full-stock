@@ -1,6 +1,8 @@
 # Full Stock 
 ## (Última actualización de este documento al 09/11/25)
 
+## Live demo [aquí](https://www.gonzalovidal.dev/full-stock/about.html)
+
 Proyecto académico estático construido con **HTML** y **CSS**, que incluye las páginas:
 - `about.html` – Quiénes somos  
 - `privacy.html` – Política de Privacidad  
