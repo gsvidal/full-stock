@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,9 +7,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
       rel="stylesheet"
     />
+
     <link rel="stylesheet" href="./css/index.css" />
     <title>Home</title>
   </head>
@@ -31,9 +32,19 @@
       </nav>
       <span class="header__cart"></span>
     </header>
+    <section class="hero">
+      <div class="hero__content">
+        <h2 class="hero__title">Nuevos productos disponibles</h2>
+        <p class="hero__copy">
+          Un pequeño lote de increíbles productos acaba de llegar. Agrega tus
+          favoritos al carrito antes que se agoten.
+        </p>
+        <a class="hero__button" href="#">Compra ahora</a>
+      </div>
+    </section>
     <main>
-      <section>
-        <h1>Compra por categoría</h1>
+      <section class="section__categorias">
+        <h1 class="categorias__title">Compra por categoría</h1>
         <p>
           Explora nuestra selección de productos especialmente diseñados para
           desarrolladores web. Encuentra lo que buscas navegando por nuestras
@@ -43,7 +54,7 @@
           <article class="categoria categoria--polos">
             <img
               class="categoria__image"
-              src="./images/Rectangle 4923.jpg"
+              src="./images/categoria_polos.png"
               alt="Joven con polo azul"
             />
             <h4 class="categoria__nombre">Polos</h4>
@@ -55,7 +66,7 @@
           <article class="categoria categoria--tazas">
             <img
               class="categoria__image"
-              src="./images/Rectangle 4924.jpg"
+              src="./images/categoria_tazas.png"
               alt="Taza serigrafiada"
             />
             <h4 class="categoria__nombre">Tazas</h4>
@@ -67,7 +78,7 @@
           <article class="categoria categoria--stickers">
             <img
               class="categoria__image"
-              src="./images/Rectangle 4925.jpg"
+              src="./images/categoria_stickers.png"
               alt="Laptop con stickers de tecnologías"
             />
             <h4 class="categoria__nombre">Stickers</h4>
@@ -79,5 +90,62 @@
         </div>
       </section>
     </main>
+    <footer class="footer">
+      <section class="footer__main-container">
+        <nav class="footer__nav">
+          <div class="footer__nav-column">
+            <h4 class="footer__nav-title">Tienda</h4>
+            <ul class="footer__links">
+              <li class="footer__link"><a href="#">Polos</a></li>
+              <li class="footer__link"><a href="#">Tazas</a></li>
+              <li class="footer__link"><a href="#">Stickers</a></li>
+            </ul>
+          </div>
+
+          <div class="footer__nav-column">
+            <h4 class="footer__nav-title">Compañía</h4>
+            <ul class="footer__links">
+              <li class="footer__link">
+                <a href="./about.html">Quienes somos</a>
+              </li>
+              <li class="footer__link">
+                <a href="./terms.html">Términos y condiciones</a>
+              </li>
+              <li class="footer__link">
+                <a href="./privacy.html">Privacidad</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer__nav-column">
+            <h4 class="footer__nav-title">Conecta</h4>
+            <ul class="footer__links">
+              <li class="footer__link"><a href="#">WhatsApp</a></li>
+              <li class="footer__link"><a href="#">Facebook</a></li>
+              <li class="footer__link"><a href="#">Instagram</a></li>
+            </ul>
+          </div>
+        </nav>
+        <section class="footer__boletin">
+          <h4 class="footer__boletin-title">Suscríbete a nuestro boletín</h4>
+          <p class="footer__copy">
+            Recibe las últimas ofertas y descuentos en tu correo semanalmente.
+          </p>
+          <div class="button-container">
+            <input
+              type="text"
+              class="footer__boletin-input"
+              id="footer-input"
+            />
+            <button class="button button--footer-boletin">Suscribirse</button>
+          </div>
+        </section>
+      </section>
+      <div class="footer__copyright">
+        <p class="footer__copyright-text">
+          Todos los derechos reservados &copy; Full Stock
+        </p>
+      </div>
+    </footer>
   </body>
 </html>
