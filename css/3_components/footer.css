@@ -1,0 +1,139 @@
+/* css/3_components/footer.css */
+
+.footer {
+  max-width: 80rem;
+  margin: 0 auto;
+  border-top: 1px solid var(--separator);
+}
+
+.footer__main-container {
+  display: flex;
+  flex-direction: column;
+  padding: 3rem 1rem 4rem;
+}
+
+.footer__nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.footer__nav-title {
+  font-weight: 500;
+}
+
+.footer__nav-column {
+  width: calc(50% - 0.5rem);
+}
+
+.footer__link {
+  margin: 1.5rem 0;
+  font-size: 0.875rem;
+}
+
+.footer__link a {
+  color: var(--muted-foreground);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.footer__link a:hover {
+  color: var(--foreground);
+}
+
+.footer__boletin {
+  margin-top: 0.5rem;
+  max-width: 28rem;
+}
+
+.footer__copy {
+  margin: 0 0 0.5rem;
+  color: var(--muted-foreground);
+}
+
+.button-container {
+  display: flex;
+  align-items: center;
+}
+
+.footer__boletin-title {
+  margin-bottom: 1.5rem;
+  font-weight: 500;
+  color: var(--foreground);
+}
+
+.footer__boletin-input {
+  width: 100%;
+  height: 2.5rem;
+  margin-right: 0.5rem;
+  border: 1px solid var(--border);
+  border-radius: 0.75rem;
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.1);
+  padding: 0 1rem;
+  font-family: var(--family-text);
+}
+
+.footer__boletin-input:focus {
+  outline: 2px solid var(--outline);
+  outline-offset: 2px;
+}
+
+.button--footer-boletin {
+  height: 2.5rem;
+  padding: 0.5625rem 0.875rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 1.25rem;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: var(--secondary-background);
+  cursor: pointer;
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.1);
+  color: var(--muted-foreground);
+  transition: background-color 0.2s ease;
+}
+
+.button--footer-boletin:hover {
+  background-color: var(--accent-a2);
+}
+
+.footer__copyright {
+  padding: 1.5rem 0;
+  width: 100%;
+  font-size: 0.875rem;
+  border-top: 1px solid var(--separator);
+}
+
+.footer__copyright-text {
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+  color: var(--muted-foreground);
+}
+
+@media (min-width: 768px) {
+  .footer__nav {
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
+}
+
+@media (min-width: 1280px) {
+  .footer {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  .footer__main-container {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 2rem;
+  }
+  .footer__nav {
+    width: 100%;
+  }
+
+  .footer__boletin {
+    min-width: 28rem;
+  }
+}
+

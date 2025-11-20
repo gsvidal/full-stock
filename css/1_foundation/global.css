@@ -1,0 +1,26 @@
+/* css/1_foundation/global.css */
+html {
+  font-size: 16px;
+}
+body {
+  font-family: var(--family-text);
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--foreground);
+  background-color: var(--background);
+  line-height: 1.5;
+}
+
+p {
+  margin: 1rem 0 2.5rem;
+  max-width: 48rem;
+  color: var(--muted-foreground);
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
