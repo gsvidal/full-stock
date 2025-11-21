@@ -19,38 +19,6 @@
   height: 1.75rem;
 }
 
-.header__nav {
-  display: flex;
-}
-
-.header__links {
-  display: flex;
-  list-style: none;
-  gap: 0;
-  color: var(--muted-foreground);
-}
-
-.header__link {
-  padding: 1.375rem 0.75rem;
-  cursor: pointer;
-  color: var(--muted-foreground);
-  transition: background-color 0.2s ease, color 0.2s ease;
-}
-
-.header__link:hover {
-  background-color: var(--accent-a2);
-  color: var(--foreground);
-}
-
-.header__link--polos {
-}
-
-.header__link--tazas {
-}
-
-.header__link--stickers {
-}
-
 .header__cart {
   display: inline-block;
   width: 1.5rem;

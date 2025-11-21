@@ -11,10 +11,23 @@
 
 /* 3. Components */
 @import url('3_components/header.css');
+@import url('3_components/main-nav.css');
+@import url('3_components/nav-item.css');
+
 @import url('3_components/hero.css');
+
 @import url('3_components/categories.css');
+@import url('3_components/category.css');
+
 @import url('3_components/features.css');
+@import url('3_components/feature.css');
+
 @import url('3_components/footer.css');
+@import url('3_components/links-group.css');
+@import url('3_components/input.css');
+@import url('3_components/newsletter-form.css');
+
+
 @import url('3_components/button.css');
 
 /* 4. Utilities */

@@ -1,0 +1,10 @@
+.header__nav {
+  display: flex;
+}
+
+.header__links {
+  display: flex;
+  list-style: none;
+  gap: 0;
+  color: var(--muted-foreground);
+}

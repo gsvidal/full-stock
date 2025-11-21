@@ -9,7 +9,7 @@
   background-blend-mode: multiply;
 }
 
-.hero__content {
+.container--hero {
   color: var(--white);
   max-width: 48rem;
   padding: 8rem 1rem;
@@ -20,7 +20,7 @@
   .hero {
     height: 48rem;
   }
-  .hero__content {
+  .contain--hero {
     padding: 16rem 5rem;
   }
 }

@@ -1,0 +1,21 @@
+.footer__nav-column {
+  width: calc(50% - 0.5rem);
+}
+
+.footer__nav-title {
+  font-weight: 500;
+}
+.footer__link {
+  margin: 1.5rem 0;
+  font-size: 0.875rem;
+}
+
+.footer__link a {
+  color: var(--muted-foreground);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.footer__link a:hover {
+  color: var(--foreground);
+}

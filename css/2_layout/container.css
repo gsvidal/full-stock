@@ -2,7 +2,18 @@
 
 .container {
   max-width: 80rem;
-  padding: 3rem 1rem;
+  padding: 0rem 1rem;
   margin: 0 auto;
 }
 
+@media (min-width: 768px) {
+  .container {
+    padding: 0rem 1.5rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    padding: 0rem 2rem;
+  }
+}

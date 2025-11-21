@@ -64,3 +64,10 @@ full-stock/
 
 ## 📜 Licencia
 Proyecto de uso académico y libre modificación para fines educativos.
+
+## Buenas prácticas de desarrollo aplicadas
+HTML semantico
+CSS:
+- CSS System Design (custom properties, global styles, etc)
+- BEM Nomenclature
+- CSS Declaration Order)
