@@ -1,12 +1,13 @@
 .header__link {
-  padding: 1.375rem 0.75rem;
+  padding: 0.875rem 0.75rem 0.8125rem;
   line-height: 20px;
   cursor: pointer;
   color: var(--muted-foreground);
   transition: background-color 0.2s ease, color 0.2s ease;
+  font-size: 0.875rem;
 }
 
 .header__link:hover {
-  background-color: var(--accent-a2);
+  background-color: var(--accent-background);
   color: var(--foreground);
 }

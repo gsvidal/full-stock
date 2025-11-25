@@ -1,15 +1,12 @@
 /* css/3_components/footer.css */
 
 .footer {
-  max-width: 80rem;
-  margin: 0 auto;
   border-top: 1px solid var(--separator);
 }
 
 .footer__main-container {
   display: flex;
   flex-direction: column;
-  padding: 3rem 1rem 4rem;
 }
 
 .footer__nav {
@@ -40,11 +37,6 @@
 }
 
 @media (min-width: 1280px) {
-  .footer {
-    padding-left: 2rem;
-    padding-right: 2rem;
-  }
-
   .footer__main-container {
     flex-direction: row;
     justify-content: space-between;

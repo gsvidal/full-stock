@@ -1,5 +1,17 @@
 .header__nav {
   display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 3rem;
+  left: 0px;
+  right: 0px;
+  z-index: 1;
+  background-color: var(--background); 
+}
+@media (min-width: 768px) {
+  .header__nav {
+    position: static;
+  }
 }
 
 .header__links {
