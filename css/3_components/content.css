@@ -1,0 +1,61 @@
+/* Considerando layout de Figma semana 1: Inicia aqui */
+.content .container {
+  max-width: 48rem;
+  margin: 0 auto;
+}
+/* Considerando layout de Figma semana 1: Finaliza aqui */
+
+.content [class*='__title'] {
+  margin-bottom: 2rem;
+  font-size: 2.25rem;
+  font-weight: 800;
+  line-height: 2.5rem;
+}
+
+.content [class*='__subtitle'] {
+  margin-top: 3rem;
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.content [class*='__text'] {
+  margin-bottom: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.content [class*='__text--last'] {
+  margin-bottom: 0;
+}
+
+.content [class*='__text-strong'] {
+  font-weight: 700;
+}
+
+.content [class$='__list'] {
+  padding-left: 1.625rem;
+  margin-bottom: 1.25rem;
+}
+.content [class*='__list-item'] {
+  padding-left: 0.375rem;
+  margin: 0.5rem 0;
+  line-height: 1.75rem;
+  list-style: disc;
+}
+
+.content [class*='__list-item']::marker {
+  color: var(--accent-9);
+}
+
+.content [class*='__list-strong'] {
+  font-weight: 700;
+}
+
+.content [class*='__link'] {
+  color: var(--accent-9);
+  text-decoration: underline;
+}
+
+.content [class*='__link']:hover {
+  color: var(--accent-10);
+}

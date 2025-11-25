@@ -1,19 +1,32 @@
 /* css/3_components/header.css */
-
 .header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 80rem;
-  height: 3rem;
-  margin: 0 auto;
-  padding: 0 2rem;
+  position: relative;
   border-bottom: 1px solid var(--separator);
 }
-
+.header::after {
+  content: '';
+  position: absolute;
+  top: calc(3rem - 1px);
+  left: 50%;
+  width: calc(100vw - 2rem);
+  height: 1px;
+  background: var(--separator);
+  transform: translateX(-50%);
+}
+.container--header {
+  display: flex;
+  height: 3rem;
+  margin-bottom: 3rem;
+  justify-content: space-between;
+  align-items: center;
+}
 @media (min-width: 768px) {
-  .header {
+  .header::after {
+    height: 0px;
+  }
+  .container--header {
     height: 3rem;
+    margin-bottom: 0;
   }
 }
 

@@ -1,4 +1,4 @@
-*,
+/* *,
 *::before,
 *::after {
   padding: 0;
@@ -23,7 +23,6 @@ header {
   min-height: 4rem;
   padding: 1.25rem 2rem 1.25rem;
   margin: 0 auto;
-  /* line-height: 1.5rem; */
   font-size: 1rem;
   font-weight: 500;
 }
@@ -96,4 +95,4 @@ code {
   font-family: 'Inter', sans-serif;
   font-size: 0.875rem;
   font-weight: 600;
-}
+} */

@@ -14,7 +14,7 @@ body {
 p {
   margin: 1rem 0 2.5rem;
   max-width: 48rem;
-  color: var(--muted-foreground);
+  /* color: var(--muted-foreground); */
 }
 
 a {

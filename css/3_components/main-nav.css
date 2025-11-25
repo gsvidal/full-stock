@@ -6,11 +6,13 @@
   left: 0px;
   right: 0px;
   z-index: 1;
-  background-color: var(--background); 
+  background-color: var(--background);
+  height: 3rem;
 }
 @media (min-width: 768px) {
   .header__nav {
     position: static;
+    border-bottom: none;
   }
 }
 

@@ -7,102 +7,196 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/index.css" />
   </head>
   <body>
-    <header>
-      <div class="nav-container">
-        <span>Full Stock</span>
-        <nav>
-          <a href="./about.html">Quienes somos</a>
-          <a href="./privacy.html">Privacidad</a
-          ><a href="./terms.html">Términos y Condiciones</a>
+    <header class="header">
+      <div class="container container--header">
+        <a class="logo-container" href="./index.html">
+          <img
+            class="header__logo"
+            src="./images/Full Stock.svg"
+            alt="Logo de FullStock"
+            width="128"
+          />
+        </a>
+        <nav class="header__nav">
+          <ul class="header__links">
+            <li class="header__link header__link--polos">Polos</li>
+            <li class="header__link header__link--tazas">Tazas</li>
+            <li class="header__link header__link--stickers">Stickers</li>
+          </ul>
         </nav>
+        <button class="button button--ghost button--xl-icon">
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M2.05005 2.05005H4.05005L6.71005 14.47C6.80763 14.9249 7.06072 15.3315 7.42576 15.6199C7.7908 15.9083 8.24495 16.0604 8.71005 16.05H18.49C18.9452 16.0493 19.3865 15.8933 19.7411 15.6079C20.0956 15.3224 20.3422 14.9246 20.4401 14.48L22.09 7.05005H5.12005M9 21C9 21.5523 8.55228 22 8 22C7.44772 22 7 21.5523 7 21C7 20.4477 7.44772 20 8 20C8.55228 20 9 20.4477 9 21ZM20 21C20 21.5523 19.5523 22 19 22C18.4477 22 18 21.5523 18 21C18 20.4477 18.4477 20 19 20C19.5523 20 20 20.4477 20 21Z"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </button>
       </div>
     </header>
-    <main>
-      <section>
-        <h1>Quienes somos</h1>
-        <p>
-          ¡Bienvenido a Full Stock! Somos tu destino en línea para encontrar una
-          increíble variedad de productos que se adaptan a tu estilo de vida.
-          Nacimos de una idea simple: hacer que las compras en línea sean una
-          experiencia fácil, rápida y satisfactoria para todos.
-        </p>
-      </section>
+    <main class="content">
+      <section class="section about">
+        <div class="container">
+          <div class="about__item">
+            <h1 class="about__title">Quienes somos</h1>
+            <p class="about__text">
+              ¡Bienvenido a Full Stock! Somos tu destino en línea para encontrar
+              una increíble variedad de productos que se adaptan a tu estilo de
+              vida. Nacimos de una idea simple: hacer que las compras en línea
+              sean una experiencia fácil, rápida y satisfactoria para todos.
+            </p>
+          </div>
 
-      <section>
-        <h2>Nuestra Historia</h2>
-        <p>
-          Full Stock comenzó como un pequeño proyecto entre un grupo de
-          entusiastas de la tecnología y el buen diseño. Nos dimos cuenta de que
-          a menudo era difícil encontrar productos de calidad en un solo lugar y
-          con un servicio al cliente que realmente se preocupara. Decidimos
-          cambiar eso.
-        </p>
-        <p>
-          Desde nuestro humilde comienzo, hemos crecido hasta convertirnos en
-          una tienda en línea con un catálogo en constante expansión, pero
-          nuestra misión principal sigue siendo la misma.
-        </p>
-      </section>
+          <div class="about__item">
+            <h2 class="about__subtitle">Nuestra Historia</h2>
+            <p class="about__text">
+              Full Stock comenzó como un pequeño proyecto entre un grupo de
+              entusiastas de la tecnología y el buen diseño. Nos dimos cuenta de
+              que a menudo era difícil encontrar productos de calidad en un solo
+              lugar y con un servicio al cliente que realmente se preocupara.
+              Decidimos cambiar eso.
+            </p>
+            <p class="about__text">
+              Desde nuestro humilde comienzo, hemos crecido hasta convertirnos
+              en una tienda en línea con un catálogo en constante expansión,
+              pero nuestra misión principal sigue siendo la misma.
+            </p>
+          </div>
 
-      <section>
-        <h2>Nuestra Misión</h2>
-        <p>
-          Nuestra misión es ofrecerte una selección cuidadosamente curada de
-          productos, combinada con una experiencia de compra sin complicaciones.
-          Queremos que cada visita a Full Stock sea inspiradora y que cada
-          compra te traiga satisfacción.
-        </p>
-      </section>
+          <div class="about__item">
+            <h2 class="about__subtitle">Nuestra Misión</h2>
+            <p class="about__text">
+              Nuestra misión es ofrecerte una selección cuidadosamente curada de
+              productos, combinada con una experiencia de compra sin
+              complicaciones. Queremos que cada visita a Full Stock sea
+              inspiradora y que cada compra te traiga satisfacción.
+            </p>
+          </div>
 
-      <section>
-        <h2>Nuestros Valores</h2>
-        <p>
-          Creemos firmemente en los pilares que nos han guiado desde el primer
-          día:
-        </p>
-        <ul>
-          <li>
-            <strong>Calidad Primero:</strong>
-            Seleccionamos productos que no solo se ven bien, sino que también
-            cumplen con nuestros estándares de calidad y durabilidad.
-          </li>
-          <li>
-            <strong>Pasión por el Cliente:</strong> Tu satisfacción es nuestra
-            máxima prioridad. Nuestro equipo está siempre dispuesto a ayudarte y
-            a asegurarse de que tu experiencia sea excepcional.
-          </li>
-          <li>
-            <strong>Innovación Constante:</strong>
-            Estamos siempre buscando nuevas formas de mejorar nuestra
-            plataforma, nuestro catálogo y nuestros servicios para ofrecerte lo
-            mejor del mercado.
-          </li>
-          <li>
-            <strong>Simplicidad:</strong>
-            Creemos que comprar en línea debe ser un proceso sencillo y directo,
-            desde la búsqueda del producto hasta la - entrega en tu puerta.
-          </li>
-        </ul>
+          <div class="about__item">
+            <h2 class="about__subtitle">Nuestros Valores</h2>
+            <p class="about__text">
+              Creemos firmemente en los pilares que nos han guiado desde el
+              primer día:
+            </p>
+            <ul class="about__list">
+              <li class="about__list-item">
+                <strong class="about__list-strong">Calidad Primero:</strong>
+                Seleccionamos productos que no solo se ven bien, sino que
+                también cumplen con nuestros estándares de calidad y
+                durabilidad.
+              </li>
+              <li class="about__list-item">
+                <strong class="about__list-strong"
+                  >Pasión por el Cliente:</strong
+                >
+                Tu satisfacción es nuestra máxima prioridad. Nuestro equipo está
+                siempre dispuesto a ayudarte y a asegurarse de que tu
+                experiencia sea excepcional.
+              </li>
+              <li class="about__list-item">
+                <strong class="about__list-strong"
+                  >Innovación Constante:</strong
+                >
+                Estamos siempre buscando nuevas formas de mejorar nuestra
+                plataforma, nuestro catálogo y nuestros servicios para ofrecerte
+                lo mejor del mercado.
+              </li>
+              <li class="about__list-item">
+                <strong class="about__list-strong">Simplicidad:</strong>
+                Creemos que comprar en línea debe ser un proceso sencillo y
+                directo, desde la búsqueda del producto hasta la entrega en tu
+                puerta.
+              </li>
+            </ul>
+          </div>
+
+          <div class="about__item">
+            <p class="about__text about__text--last">
+              Gracias por elegir Full Stock. ¡Te invitamos a explorar
+              <a href="./index.html" class="about__link">nuestro catálogo</a>
+              y descubrir todo lo que tenemos para ofrecer!
+            </p>
+          </div>
+        </div>
       </section>
-      <p>
-        Gracias por elegir Full Stock. ¡Te invitamos a explorar
-        <!-- Todo: Agrega referencia correcta para 'nuestro catálogo' -->
-        <a href="#" target="_blank" rel="noopener noreferrer"
-          >nuestro catálogo</a
-        >
-        y descubrir todo lo que tenemos para ofrecer!
-      </p>
     </main>
-    <footer>
-      <div class="nav-container">
-        <span>Footer</span>
-        <!-- <nav></nav> -->
+    <footer class="footer">
+      <section class="section-sm container footer__main-container">
+        <nav class="footer__nav">
+          <div class="footer__nav-column">
+            <h4 class="footer__nav-title">Tienda</h4>
+            <ul class="footer__links">
+              <li class="footer__link"><a href="#">Polos</a></li>
+              <li class="footer__link"><a href="#">Tazas</a></li>
+              <li class="footer__link"><a href="#">Stickers</a></li>
+            </ul>
+          </div>
+
+          <div class="footer__nav-column">
+            <h4 class="footer__nav-title">Compañía</h4>
+            <ul class="footer__links">
+              <li class="footer__link">
+                <a href="./about.html">Quienes somos</a>
+              </li>
+              <li class="footer__link">
+                <a href="./terms.html">Términos y condiciones</a>
+              </li>
+              <li class="footer__link">
+                <a href="./privacy.html">Privacidad</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer__nav-column">
+            <h4 class="footer__nav-title">Conecta</h4>
+            <ul class="footer__links">
+              <li class="footer__link"><a href="#">WhatsApp</a></li>
+              <li class="footer__link"><a href="#">Facebook</a></li>
+              <li class="footer__link"><a href="#">Instagram</a></li>
+            </ul>
+          </div>
+        </nav>
+
+        <div class="footer__boletin">
+          <h4 class="footer__boletin-title">Suscríbete a nuestro boletín</h4>
+          <p class="footer__copy">
+            Recibe las últimas ofertas y descuentos en tu correo semanalmente.
+          </p>
+          <form class="footer__input-container">
+            <label for="footer-input" class="sr-only">Correo electrónico</label>
+            <input
+              type="email"
+              class="footer__boletin-input"
+              id="footer-input"
+              placeholder="Tu correo electrónico"
+            />
+            <button class="button button--lg button--secondary">
+              Suscribirse
+            </button>
+          </form>
+        </div>
+      </section>
+
+      <div class="footer__copyright">
+        <p class="footer__copyright-text">
+          Todos los derechos reservados &copy; Full Stock
+        </p>
       </div>
     </footer>
   </body>
