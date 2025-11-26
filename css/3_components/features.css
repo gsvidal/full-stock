@@ -9,15 +9,28 @@
   margin-bottom: 3rem;
 }
 
-.features__articles {
+/* .features__articles {
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;
   justify-content: center;
+} */
+
+/* Refactorizando features a grid*/
+.features__articles {
+  display: grid;
+  place-items: center;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+@media (min-width: 640px) {
+  .features__articles {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .features__articles {
-    justify-content: center;
+    grid-template-columns: repeat(4, 1fr);
   }
 }
