@@ -24,3 +24,10 @@ a {
 ul {
   list-style: none;
 }
+
+hr {
+  margin: 1.5625rem 0;
+  border: none;
+  border-top: 1px solid var(--separator);
+  height: 0;
+}

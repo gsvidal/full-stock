@@ -76,12 +76,6 @@
   max-width: 448px;
   cursor: pointer;
 }
-/* @media (max-width: 767px) {
-  .category-product {
-    max-width: 448px;
-    margin: 0 auto;
-  }
-} */
 
 .category-product-image {
   width: 100%;
