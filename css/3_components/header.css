@@ -1,8 +1,11 @@
 /* css/3_components/header.css */
 .header {
-  position: relative;
+  position: sticky;
+  top: 0;
   border-bottom: 1px solid var(--separator);
+  background-color: var(--background);
 }
+
 .header::after {
   content: '';
   position: absolute;

@@ -9,6 +9,7 @@
 @import url('2_layout/container.css');
 @import url('2_layout/section.css');
 @import url('2_layout/section-sm.css');
+@import url('2_layout/sidebar-layout.css');
 
 /* 3. Components */
 @import url('3_components/header.css');
