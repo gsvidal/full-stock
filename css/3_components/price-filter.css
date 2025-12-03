@@ -1,0 +1,18 @@
+.filter__name {
+  margin-bottom: 1.5rem;
+  font-size: 0.875rem;
+}
+.form--filter-price {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  max-width: 24rem;
+}
+.label {
+  margin-bottom: 0.5rem;
+  font-size: 0.875rem;
+}
+.inputs-container {
+  display: flex;
+  gap: 1.5rem;
+}

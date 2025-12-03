@@ -33,5 +33,10 @@
 
 @import url('3_components/button.css');
 
+
+@import url('3_components/price-filter.css');
+@import url('3_components/products-grid.css');
+@import url('3_components/product.css');
+
 /* 4. Utilities */
 @import url('4_utilities/utilities.css');
