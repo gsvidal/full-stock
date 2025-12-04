@@ -1,7 +1,18 @@
 /* css/3_components/cart.css */
 
+.container--cart {
+  max-width: 36rem;
+}
+
+@media (min-width: 40rem) {
+  .container--cart {
+    padding: 0;
+    max-width: 36rem;
+  }
+}
+
 .cart__title {
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
   line-height: 2.25rem;
   font-size: 1.875rem;
   font-weight: 700;
@@ -12,8 +23,11 @@
 .cart__items {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
-  margin-bottom: 2rem;
+}
+
+.cart__items.border {
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
 }
 
 .cart-item {
@@ -21,6 +35,9 @@
   justify-content: space-between;
   gap: 1rem;
   padding: 1.5rem;
+}
+.cart-item:not(:first-child) {
+  border-top: 1px solid var(--border);
 }
 
 .cart-item__delete {
@@ -30,6 +47,10 @@
   background: transparent;
   color: var(--muted-foreground);
   cursor: pointer;
+}
+
+.cart-item__delete:hover {
+  background-color: var(--muted-background);
 }
 
 .cart-item__image {
@@ -55,8 +76,8 @@
 .cart-item__info--bottom {
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
 }
-
 
 .cart-item__name {
   margin: 0;
@@ -82,13 +103,16 @@
 }
 
 .cart-item__quantity-button {
-
   width: 1.75rem;
   height: 1.75rem;
   padding: 0.25rem;
   background: var(--background);
-  color: var(--foreground);
+  color: var(--muted-foreground);
   cursor: pointer;
+}
+
+.cart-item__quantity-button:hover {
+  background-color: var(--muted-background);
 }
 
 .cart-item__quantity-value {
@@ -96,7 +120,7 @@
   height: 2rem;
   text-align: center;
   line-height: 1.5rem;
-  font-size: .875rem;
+  font-size: 0.875rem;
   font-weight: 400;
   color: var(--foreground);
 }
@@ -104,15 +128,19 @@
 .cart__summary {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
-  padding-top: 1.5rem;
   border-top: 1px solid var(--separator);
+}
+.cart__summary.border {
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top: none;
 }
 
 .cart__total {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 1.5rem;
 }
 
 .cart__total-label {
@@ -129,7 +157,12 @@
   color: var(--foreground);
 }
 
-.cart__checkout-button {
+.button-container__cart {
+  padding: 1.5rem;
+  border-top: 1px solid var(--border);
+}
+
+.button--cart__checkout {
   width: 100%;
 }
 

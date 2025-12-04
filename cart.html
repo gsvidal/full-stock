@@ -61,11 +61,11 @@
     </header>
 
     <main>
-      <section class="section cart">
-        <div class="container">
+      <section class="section-sm cart">
+        <div class="container container--cart">
           <h1 class="cart__title">Carrito de compras</h1>
-          <div class="cart__items">
-            <article class="cart-item border">
+          <div class="cart__items border border--lg">
+            <article class="cart-item">
               <img
                 src="./images/category-catalog/polos/polo-react.png"
                 alt="Polo React"
@@ -76,10 +76,7 @@
               <div class="cart-item__info-container">
                 <div class="cart-item__info cart-item__info--top">
                   <h2 class="cart-item__name">Polo React</h2>
-                  <button
-                    class="cart-item__delete border flex-center"
-                    aria-label="Eliminar producto"
-                  >
+                  <button class="cart-item__delete border flex-center">
                     <svg
                       width="17"
                       height="19"
@@ -101,7 +98,9 @@
                 <div class="cart-item__info cart-item__info--bottom">
                   <p class="cart-item__price">$20.00</p>
                   <div class="cart-item__quantity">
-                    <button class="cart-item__quantity-button border flex-center">
+                    <button
+                      class="cart-item__quantity-button border flex-center"
+                    >
                       <svg
                         width="20"
                         height="20"
@@ -117,8 +116,12 @@
                         />
                       </svg>
                     </button>
-                    <span class="cart-item__quantity-value border flex-center">1</span>
-                    <button class="cart-item__quantity-button border flex-center">
+                    <span class="cart-item__quantity-value border flex-center"
+                      >1</span
+                    >
+                    <button
+                      class="cart-item__quantity-button border flex-center"
+                    >
                       <svg
                         width="20"
                         height="20"
@@ -136,17 +139,20 @@
                 </div>
               </div>
             </article>
+
           </div>
-          <div class="cart__summary">
+          <div class="cart__summary border border--lg">
             <div class="cart__total">
               <span class="cart__total-label">Total</span>
               <span class="cart__total-amount">$20.00</span>
             </div>
-            <button
-              class="button button--lg button--primary cart__checkout-button"
-            >
-              Continuar Compra
-            </button>
+            <div class="button-container__cart">
+              <button
+                class="button button--lg button--primary button--cart__checkout"
+              >
+                Continuar Compra
+              </button>
+            </div>
           </div>
         </div>
       </section>
