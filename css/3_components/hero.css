@@ -9,7 +9,6 @@
   background-blend-mode: multiply;
 }
 
-
 .container--hero {
   color: var(--white);
   max-width: 48rem;
@@ -26,9 +25,43 @@
   }
 }
 
+@keyframes slide-in-left {
+  0% {
+    transform: translateX(-30px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-in-right {
+  0% {
+    transform: translateX(30px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
 .hero__title {
   color: var(--white);
   font-size: 2.25rem;
+  animation: slide-in-left 0.8s linear 1;
 }
 
 @media (min-width: 768px) {
@@ -40,9 +73,10 @@
 .hero__copy {
   color: var(--white);
   font-size: 1.25rem;
+  animation: slide-in-right 0.8s linear;
 }
 
-.hero__button {
+.button--hero {
   color: var(--white);
   padding: 0.6875rem 2rem;
   line-height: 1.5rem;
@@ -52,8 +86,10 @@
   text-decoration: none;
   display: inline-block;
   transition: background-color 0.2s ease;
+  opacity: 0;
+  animation: fade-in 1s ease-out 1s forwards;
 }
 
-.hero__button:hover {
+.button--hero:hover {
   background-color: var(--primary-background-hover);
 }

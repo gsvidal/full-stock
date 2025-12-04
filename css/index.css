@@ -29,10 +29,11 @@
 @import url('3_components/input.css');
 @import url('3_components/newsletter-form.css');
 @import url('3_components/content.css');
+
 @import url('3_components/product-detail.css');
+@import url('3_components/cart.css');
 
 @import url('3_components/button.css');
-
 
 @import url('3_components/price-filter.css');
 @import url('3_components/products-grid.css');
