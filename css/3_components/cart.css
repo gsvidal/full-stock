@@ -20,12 +20,12 @@
   text-align: center;
 }
 
-.cart__items {
+.cart-list {
   display: flex;
   flex-direction: column;
 }
 
-.cart__items.border {
+.cart-list.border {
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
 }
