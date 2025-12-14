@@ -1,0 +1,73 @@
+.checkout {
+  background-color: var(--muted-background);
+}
+.checkout__title {
+  line-height: 1.75rem;
+  font-size: 1.125rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+.checkout__list-container {
+  background-color: var(--white);
+}
+
+.checkout__item {
+  display: flex;
+  gap: 1.5rem;
+  padding: 1.5rem;
+}
+.checkout__item:not(:first-child) {
+  border-top: 1px solid var(--border);
+}
+
+.checkout__item-image {
+  max-width: 5rem;
+  max-height: 5rem;
+}
+
+.checkout__item-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: space-between;
+  width: 100%;
+}
+
+.checkout__item-name {
+  margin: 0px;
+  font-size: var(--font-size-3-5);
+  font-weight: var(--font-weight-regular);
+}
+
+.checkout__item-quantity {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 1rem;
+  margin: 0px;
+  width: 100%;
+}
+
+.checkout__item-icon--x {
+  display: flex;
+  align-items: center;
+}
+
+.checkout__total-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem;
+  border-top: 1px solid var(--border);
+}
+
+.checkout__total-label,
+.checkout__total-price {
+  margin: 0;
+  font-size: var(--font-size-4);
+  font-weight: var(--font-weight-medium);
+  line-height: var(--line-height-6);
+}
+
+/* Checkout form */
+/* revisar demas label + input como de category-caalog y colocar input container y label classnames */
+

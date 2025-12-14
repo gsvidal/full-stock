@@ -1,0 +1,11 @@
+.fieldset {
+  all: unset;
+  display: grid;
+  gap: 1.5rem;
+}
+
+.legend {
+  margin-bottom: 1.5rem;
+  font-size: var(--font-size-4-5);
+  grid-column: 1 / -1;
+}

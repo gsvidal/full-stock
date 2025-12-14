@@ -1,18 +1,17 @@
-.filter__name {
-  margin-bottom: 1.5rem;
-  font-size: 0.875rem;
-}
 .form--filter-price {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
   max-width: 24rem;
 }
-.label {
-  margin-bottom: 0.5rem;
-  font-size: 0.875rem;
+
+.fieldset.fieldset--price {
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
 }
-.inputs-container {
-  display: flex;
-  gap: 1.5rem;
+
+.legend.legend--price {
+  font-size: var(--font-size-3-5);
+}
+
+.button--price {
+  margin-top: 1.5rem;
+  width: 100%;
 }

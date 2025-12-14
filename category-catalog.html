@@ -68,9 +68,9 @@
           <div class="products__layout">
             <div class="filter-container">
               <form action="" class="form form--filter-price">
-                <p class="filter__name filter__name--price">Precio</p>
-                <div class="inputs-container">
-                  <div class="input-container">
+                <fieldset class="fieldset fieldset--price">
+                  <legend class="legend legend--price">Precio</legend>
+                  <div class="form-field">
                     <label for="input-min" class="label label--category-product"
                       >Min</label
                     >
@@ -81,7 +81,7 @@
                       class="input input--category-product"
                     />
                   </div>
-                  <div class="input-container">
+                  <div class="form-field">
                     <label for="input-max" class="label label--category-product"
                       >Max</label
                     >
@@ -92,8 +92,10 @@
                       class="input input--category-product"
                     />
                   </div>
-                </div>
-                <button class="button button--lg button--secondary">
+                </fieldset>
+                <button
+                  class="button button--lg button--secondary button--price"
+                >
                   Filtrar Productos
                 </button>
               </form>

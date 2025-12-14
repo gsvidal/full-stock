@@ -61,100 +61,98 @@
     </header>
 
     <main>
-      <section class="section-sm cart">
-        <div class="container container--cart">
-          <h1 class="cart__title">Carrito de compras</h1>
-          <div class="cart-list border border--lg">
-            <article class="cart-item">
-              <img
-                src="./images/category-catalog/polos/polo-react.png"
-                alt="Polo React"
-                class="cart-item__image"
-                width="100"
-                height="133"
-              />
-              <div class="cart-item__info-container">
-                <div class="cart-item__info cart-item__info--top">
-                  <h2 class="cart-item__name">Polo React</h2>
-                  <button
-                    class="cart-item__delete button button--outline button--sm-icon"
-                  >
-                    <svg
-                      width="17"
-                      height="19"
-                      viewBox="0 0 17 19"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M1 4.33333H16M14.3333 4.33333V16C14.3333 16.8333 13.5 17.6667 12.6667 17.6667H4.33333C3.5 17.6667 2.66667 16.8333 2.66667 16V4.33333M5.16667 4.33333V2.66667C5.16667 1.83333 6 1 6.83333 1H10.1667C11 1 11.8333 1.83333 11.8333 2.66667V4.33333M6.83333 8.5V13.5M10.1667 8.5V13.5"
-                        stroke="currentColor"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      />
-                    </svg>
-                  </button>
-                </div>
-
-                <div class="cart-item__info cart-item__info--bottom">
-                  <p class="cart-item__price">$20.00</p>
-                  <div class="cart-item__quantity">
-                    <button
-                      class="cart-item__quantity-button button button--outline button--sm-icon"
-                    >
+      <section class="section-sm checkout">
+        <div class="container container--checkout">
+          <h2 class="checkout__title">Resumen de la orden</h2>
+          <div class="checkout__list-container border border--lg">
+            <div class="checkout__list">
+              <article class="checkout__item">
+                <img
+                  class="checkout__item-image"
+                  src="./images/category-catalog/polos/polo-react.png"
+                  alt="Polo negro con logo React"
+                />
+                <div class="checkout__item-info">
+                  <p class="checkout__item-name">Polo React</p>
+                  <p class="checkout__item-quantity">
+                    <span class="checkout__item-label">1</span>
+                    <span class="checkout__item-icon--x">
                       <svg
-                        width="20"
-                        height="20"
-                        viewBox="0 0 20 20"
+                        width="16"
+                        height="16"
+                        viewBox="0 0 16 16"
                         fill="none"
                         xmlns="http://www.w3.org/2000/svg"
                       >
                         <path
-                          fill-rule="evenodd"
-                          clip-rule="evenodd"
-                          d="M4 10C4 9.58579 4.33579 9.25 4.75 9.25L15.25 9.25C15.6642 9.25 16 9.58579 16 10C16 10.4142 15.6642 10.75 15.25 10.75L4.75 10.75C4.33579 10.75 4 10.4142 4 10Z"
-                          fill="currentColor"
+                          d="M12 4L4 12M4 4L12 12"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
                         />
                       </svg>
-                    </button>
-                    <span class="cart-item__quantity-value border flex-center"
-                      >1</span
-                    >
-                    <button
-                      class="cart-item__quantity-button button button--outline button--sm-icon"
-                    >
+                    </span>
+                    <span class="checkout__item-price">$20.00</span>
+                  </p>
+                </div>
+              </article>
+              <article class="checkout__item">
+                <img
+                  class="checkout__item-image"
+                  src="./images/category-catalog/polos/polo-react.png"
+                  alt="Polo negro con logo React"
+                />
+                <div class="checkout__item-info">
+                  <p class="checkout__item-name">Polo React</p>
+                  <p class="checkout__item-quantity">
+                    <span class="checkout__item-label">1</span>
+                    <span class="checkout__item-icon--x">
                       <svg
-                        width="20"
-                        height="20"
-                        viewBox="0 0 20 20"
+                        width="16"
+                        height="16"
+                        viewBox="0 0 16 16"
                         fill="none"
                         xmlns="http://www.w3.org/2000/svg"
                       >
                         <path
-                          d="M10.75 4.75C10.75 4.33579 10.4142 4 10 4C9.58579 4 9.25 4.33579 9.25 4.75V9.25H4.75C4.33579 9.25 4 9.58579 4 10C4 10.4142 4.33579 10.75 4.75 10.75L9.25 10.75V15.25C9.25 15.6642 9.58579 16 10 16C10.4142 16 10.75 15.6642 10.75 15.25V10.75L15.25 10.75C15.6642 10.75 16 10.4142 16 10C16 9.58579 15.6642 9.25 15.25 9.25H10.75V4.75Z"
-                          fill="currentColor"
+                          d="M12 4L4 12M4 4L12 12"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
                         />
                       </svg>
-                    </button>
-                  </div>
+                    </span>
+                    <span class="checkout__item-price">$20.00</span>
+                  </p>
                 </div>
-              </div>
-            </article>
+              </article>
+            </div>
+            <div class="checkout__total-container">
+              <p class="checkout__total-label">Total</p>
+              <p class="checkout__total-price">$20.00</p>
+            </div>
           </div>
-          <div class="cart__summary border border--lg">
-            <div class="cart__total">
-              <span class="cart__total-label">Total</span>
-              <span class="cart__total-price">$20.00</span>
-            </div>
-            <div class="button-container__cart">
-              <a
-                href="./checkout.html"
-                class="button button--lg button--primary button--cart__checkout"
-              >
-                Continuar Compra
-              </a>
-            </div>
+          <div class="checkout__form">
+            <form action="">
+              <fieldset class="fieldset fieldset--checkout">
+                <legend class="legend">Información de envío</legend>
+                <div class="form-field">
+                  <label for="name" class="label">Nombre</label>
+                  <input type="text" id="name" name="name" class="input" />
+                </div>
+                <div class="form-field">
+                  <label for="lastname" class="label">Apellido</label>
+                  <input
+                    type="text"
+                    id="lastname"
+                    name="lastname"
+                    class="input"
+                  />
+                </div>
+              </fieldset>
+            </form>
           </div>
         </div>
       </section>
