@@ -1,0 +1,115 @@
+/* css/4_utilities/typography.css */
+
+/* Clases de utilidad tipográfica basadas en la guía de Figma: https://www.figma.com/design/elrVuNqnd2CKUcgC92Y1X0/FullStock?node-id=294-1866&p=f&t=xbb35HPPqCTw69eL-0 */
+
+/* text-xs/regular */
+.text-xs-regular {
+  font-size: var(--font-size-3);
+  line-height: var(--leading-4);
+  font-weight: var(--font-normal);
+}
+
+/* text-xs/medium */
+.text-xs-medium {
+  font-size: var(--font-size-3);
+  line-height: var(--leading-4);
+  font-weight: var(--font-medium);
+}
+
+/* text-sm/regular */
+.text-sm-regular {
+  font-size: var(--font-size-3-5);
+  line-height: var(--leading-5);
+  font-weight: var(--font-normal);
+}
+
+/* text-sm/regular/none */
+.text-sm-regular-none {
+  font-size: var(--font-size-3-5);
+  line-height: var(--leading-none);
+  font-weight: var(--font-normal);
+}
+
+/* text-sm/regular/6 */
+.text-sm-regular-6 {
+  font-size: var(--font-size-3-5);
+  line-height: var(--leading-6);
+  font-weight: var(--font-normal);
+}
+
+/* text-sm/medium */
+.text-sm-medium {
+  font-size: var(--font-size-3-5);
+  line-height: var(--leading-5);
+  font-weight: var(--font-medium);
+}
+
+/* text-sm/medium/none */
+.text-sm-medium-none {
+  font-size: var(--font-size-3-5);
+  line-height: var(--leading-none);
+  font-weight: var(--font-medium);
+}
+
+/* text-base/regular */
+.text-base-regular {
+  font-size: var(--font-size-4);
+  line-height: var(--leading-6);
+  font-weight: var(--font-normal);
+}
+
+/* text-base/medium */
+.text-base-medium {
+  font-size: var(--font-size-4);
+  line-height: var(--leading-6);
+  font-weight: var(--font-medium);
+}
+
+/* text-base/semibold */
+.text-base-semibold {
+  font-size: var(--font-size-4);
+  line-height: var(--leading-6);
+  font-weight: var(--font-semibold);
+}
+
+/* text-lg/medium */
+.text-lg-medium {
+  font-size: var(--font-size-4-5);
+  line-height: var(--leading-7);
+  font-weight: var(--font-medium);
+}
+
+/* text-xl/regular */
+.text-xl-regular {
+  font-size: var(--font-size-5);
+  line-height: var(--leading-7);
+  font-weight: var(--font-normal);
+}
+
+/* text-2xl/bold */
+.text-2xl-bold {
+  font-size: var(--font-size-6);
+  line-height: var(--leading-8);
+  font-weight: var(--font-bold);
+}
+
+/* text-3xl/bold */
+.text-3xl-bold {
+  font-size: var(--font-size-7-5);
+  line-height: var(--leading-9);
+  font-weight: var(--font-bold);
+}
+
+/* text-4xl/bold */
+.text-4xl-bold {
+  font-size: var(--font-size-9);
+  line-height: var(--leading-10);
+  font-weight: var(--font-bold);
+}
+
+/* text-6xl/bold */
+.text-6xl-bold {
+  font-size: var(--font-size-15);
+  line-height: var(--leading-none);
+  font-weight: var(--font-bold);
+}

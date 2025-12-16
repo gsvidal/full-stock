@@ -8,6 +8,8 @@
 
 .product-detail__image-container {
   width: 100%;
+  background-color: var(--muted-background);
+  border-radius: var(--rounded-3);
 }
 
 .product-detail__image {

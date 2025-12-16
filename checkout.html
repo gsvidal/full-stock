@@ -13,7 +13,7 @@
 
     <link rel="stylesheet" href="./css/index.css" />
   </head>
-  <body>
+  <body class="vertical-page-layout">
     <header class="header">
       <div class="container container--header">
         <a class="logo-container" href="./index.html">
@@ -68,11 +68,13 @@
             <div class="checkout__list-container border border--lg">
               <div class="checkout__list">
                 <article class="checkout__item">
-                  <img
-                    class="checkout__item-image"
-                    src="./images/category-catalog/polos/polo-react.png"
-                    alt="Polo negro con logo React"
-                  />
+                  <div class="checkout__image-container">
+                    <img
+                      class="checkout__item-image"
+                      src="./images/category-catalog/polos/polo-react.png"
+                      alt="Polo negro con logo React"
+                    />
+                  </div>
                   <div class="checkout__item-info">
                     <p class="checkout__item-name">Polo React</p>
                     <p class="checkout__item-quantity">
@@ -98,37 +100,7 @@
                     </p>
                   </div>
                 </article>
-                <article class="checkout__item">
-                  <img
-                    class="checkout__item-image"
-                    src="./images/category-catalog/polos/polo-react.png"
-                    alt="Polo negro con logo React"
-                  />
-                  <div class="checkout__item-info">
-                    <p class="checkout__item-name">Polo React</p>
-                    <p class="checkout__item-quantity">
-                      <span class="checkout__item-label">1</span>
-                      <span class="checkout__item-icon--x">
-                        <svg
-                          width="16"
-                          height="16"
-                          viewBox="0 0 16 16"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M12 4L4 12M4 4L12 12"
-                            stroke="currentColor"
-                            stroke-width="2"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                          />
-                        </svg>
-                      </span>
-                      <span class="checkout__item-price">$20.00</span>
-                    </p>
-                  </div>
-                </article>
+           
               </div>
               <div class="checkout__total-container">
                 <p class="checkout__total-label">Total</p>
@@ -220,9 +192,12 @@
                   <input type="text" id="phone" name="phone" class="input" />
                 </div>
               </fieldset>
-              <button class="button button--xl checkout-form__button">
+              <a
+                class="button button--xl checkout-form__button"
+                href="./order-confirmation.html"
+              >
                 Confirmar Orden
-              </button>
+              </a>
             </form>
           </div>
         </div>

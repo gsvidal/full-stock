@@ -6,6 +6,7 @@
 @import url('1_foundation/global.css');
 
 /* 2. Layout */
+@import url('2_layout/vertical-page-layout.css');
 @import url('2_layout/container.css');
 @import url('2_layout/section.css');
 @import url('2_layout/section-sm.css');
@@ -41,11 +42,13 @@
 @import url('3_components/fieldset.css'); /* Extra but necessary because is used on different pages */
 @import url('3_components/select.css');
 
-
 @import url('3_components/form-field.css');
 @import url('3_components/input.css');
+
+@import url('3_components/order-confirmation.css');
 
 @import url('3_components/button.css');
 
 /* 4. Utilities */
 @import url('4_utilities/utilities.css');
+@import url('4_utilities/typography.css');

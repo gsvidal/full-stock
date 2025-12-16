@@ -2,6 +2,10 @@
   all: unset;
 }
 
+.category__image-container {
+ background-color: var(--muted-background);
+}
+
 .category-product {
   border: 1px solid var(--separator);
   border-radius: 12px;
@@ -13,6 +17,11 @@
 .category-product-image {
   width: 100%;
   height: auto;
+  transition: transform 0.2s ease-in-out;
+}
+
+.category-product-image:hover {
+  transform: scale(1.05);
 }
 
 .category-product__body {
@@ -21,6 +30,7 @@
   gap: 0.5rem;
   padding: 1rem;
 }
+
 .category-product__body p {
   margin: 0;
 }

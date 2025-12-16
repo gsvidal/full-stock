@@ -40,6 +40,11 @@
   border-top: 1px solid var(--border);
 }
 
+.cart__item-img-container {
+  background-color: var(--muted-background);
+  border-radius: var(--rounded-3);
+}
+
 .cart-item__delete {
   width: 2rem;
   height: 2rem;

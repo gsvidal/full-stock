@@ -21,7 +21,7 @@
 
 .checkout__title {
   line-height: 1.75rem;
-  font-weight: var(--font-weight-medium);
+  font-weight: var(--font-medium);
   margin-bottom: 1.5rem;
   font-size: var(--font-size-4-5);
 }
@@ -40,9 +40,18 @@
   border-top: 1px solid var(--border);
 }
 
+.checkout__image-container {
+  width: 80px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--muted-background);
+  border-radius: var(--rounded-3);
+}
+
 .checkout__item-image {
-  max-width: 5rem;
-  max-height: 5rem;
+  min-width: 100%;
 }
 
 .checkout__item-info {
@@ -56,7 +65,7 @@
 .checkout__item-name {
   margin: 0px;
   font-size: var(--font-size-3-5);
-  font-weight: var(--font-weight-regular);
+  font-weight: var(--font-normal);
 }
 
 .checkout__item-quantity {
@@ -84,6 +93,6 @@
 .checkout__total-price {
   margin: 0;
   font-size: var(--font-size-4);
-  font-weight: var(--font-weight-medium);
-  line-height: var(--line-height-6);
+  font-weight: var(--font-medium);
+  line-height: var(--leading-6);
 }

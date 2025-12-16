@@ -1,0 +1,24 @@
+.order-confirmation__eyebrow {
+  color: var(--accent-foreground);
+  margin: 0;
+}
+
+.order-confirmation__title {
+  margin: .5rem 0;
+}
+
+.order-confirmation__description {
+  color: var(--muted-foreground);
+  margin: 0;
+  margin-bottom: 3rem;
+}
+
+.order-confirmation__label {
+  margin: 0;
+  margin-bottom: .5rem;
+}
+
+.order-confirmation__tracking-code {
+  color: var(--accent-foreground);
+  margin: 0;
+}
