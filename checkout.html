@@ -63,95 +63,166 @@
     <main>
       <section class="section-sm checkout">
         <div class="container container--checkout">
-          <h2 class="checkout__title">Resumen de la orden</h2>
-          <div class="checkout__list-container border border--lg">
-            <div class="checkout__list">
-              <article class="checkout__item">
-                <img
-                  class="checkout__item-image"
-                  src="./images/category-catalog/polos/polo-react.png"
-                  alt="Polo negro con logo React"
-                />
-                <div class="checkout__item-info">
-                  <p class="checkout__item-name">Polo React</p>
-                  <p class="checkout__item-quantity">
-                    <span class="checkout__item-label">1</span>
-                    <span class="checkout__item-icon--x">
-                      <svg
-                        width="16"
-                        height="16"
-                        viewBox="0 0 16 16"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M12 4L4 12M4 4L12 12"
-                          stroke="currentColor"
-                          stroke-width="2"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                      </svg>
-                    </span>
-                    <span class="checkout__item-price">$20.00</span>
-                  </p>
-                </div>
-              </article>
-              <article class="checkout__item">
-                <img
-                  class="checkout__item-image"
-                  src="./images/category-catalog/polos/polo-react.png"
-                  alt="Polo negro con logo React"
-                />
-                <div class="checkout__item-info">
-                  <p class="checkout__item-name">Polo React</p>
-                  <p class="checkout__item-quantity">
-                    <span class="checkout__item-label">1</span>
-                    <span class="checkout__item-icon--x">
-                      <svg
-                        width="16"
-                        height="16"
-                        viewBox="0 0 16 16"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M12 4L4 12M4 4L12 12"
-                          stroke="currentColor"
-                          stroke-width="2"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                      </svg>
-                    </span>
-                    <span class="checkout__item-price">$20.00</span>
-                  </p>
-                </div>
-              </article>
-            </div>
-            <div class="checkout__total-container">
-              <p class="checkout__total-label">Total</p>
-              <p class="checkout__total-price">$20.00</p>
+          <div class="checkout__summary">
+            <h2 class="checkout__title">Resumen de la orden</h2>
+            <div class="checkout__list-container border border--lg">
+              <div class="checkout__list">
+                <article class="checkout__item">
+                  <img
+                    class="checkout__item-image"
+                    src="./images/category-catalog/polos/polo-react.png"
+                    alt="Polo negro con logo React"
+                  />
+                  <div class="checkout__item-info">
+                    <p class="checkout__item-name">Polo React</p>
+                    <p class="checkout__item-quantity">
+                      <span class="checkout__item-label">1</span>
+                      <span class="checkout__item-icon--x">
+                        <svg
+                          width="16"
+                          height="16"
+                          viewBox="0 0 16 16"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M12 4L4 12M4 4L12 12"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                      </span>
+                      <span class="checkout__item-price">$20.00</span>
+                    </p>
+                  </div>
+                </article>
+                <article class="checkout__item">
+                  <img
+                    class="checkout__item-image"
+                    src="./images/category-catalog/polos/polo-react.png"
+                    alt="Polo negro con logo React"
+                  />
+                  <div class="checkout__item-info">
+                    <p class="checkout__item-name">Polo React</p>
+                    <p class="checkout__item-quantity">
+                      <span class="checkout__item-label">1</span>
+                      <span class="checkout__item-icon--x">
+                        <svg
+                          width="16"
+                          height="16"
+                          viewBox="0 0 16 16"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M12 4L4 12M4 4L12 12"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                      </span>
+                      <span class="checkout__item-price">$20.00</span>
+                    </p>
+                  </div>
+                </article>
+              </div>
+              <div class="checkout__total-container">
+                <p class="checkout__total-label">Total</p>
+                <p class="checkout__total-price">$20.00</p>
+              </div>
             </div>
           </div>
           <div class="checkout__form">
             <form action="">
               <fieldset class="fieldset fieldset--checkout">
-                <legend class="legend">Información de envío</legend>
+                <legend class="legend">Información del contacto</legend>
                 <div class="form-field">
-                  <label for="name" class="label">Nombre</label>
-                  <input type="text" id="name" name="name" class="input" />
+                  <label for="email" class="label">Correo electrónico</label>
+                  <input type="email" id="email" name="email" class="input" />
+                </div>
+              </fieldset>
+              <hr />
+              <fieldset class="fieldset fieldset--checkout">
+                <legend class="legend">Información de envío</legend>
+                <div class="double-form-field">
+                  <div class="form-field">
+                    <label for="name" class="label">Nombre</label>
+                    <input type="text" id="name" name="name" class="input" />
+                  </div>
+                  <div class="form-field">
+                    <label for="lastname" class="label">Apellido</label>
+                    <input
+                      type="text"
+                      id="lastname"
+                      name="lastname"
+                      class="input"
+                    />
+                  </div>
                 </div>
                 <div class="form-field">
-                  <label for="lastname" class="label">Apellido</label>
+                  <label for="company" class="label">Compañía</label>
                   <input
                     type="text"
-                    id="lastname"
-                    name="lastname"
+                    id="company"
+                    name="company"
                     class="input"
                   />
                 </div>
+                <div class="form-field">
+                  <label for="adress" class="label">Dirección</label>
+                  <input type="text" id="adress" name="adress" class="input" />
+                </div>
+
+                <div class="double-form-field">
+                  <div class="form-field">
+                    <label for="city" class="label">Ciudad</label>
+                    <input type="text" id="city" name="city" class="input" />
+                  </div>
+                  <div class="form-field">
+                    <label for="country" class="label">País</label>
+                    <select name="country" id="country" class="select">
+                      <option value="">Select</option>
+                      <option value="PE">Perú</option>
+                      <option value="CL">Chile</option>
+                      <option value="AR">Argentina</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="double-form-field">
+                  <div class="form-field">
+                    <label for="region" class="label">Provincia/Estado</label>
+                    <input
+                      type="text"
+                      id="region"
+                      name="region"
+                      class="input"
+                    />
+                  </div>
+
+                  <div class="form-field">
+                    <label for="postalCode" class="label">Código Postal</label>
+                    <input
+                      type="text"
+                      id="postalCode"
+                      name="postalCode"
+                      class="input"
+                    />
+                  </div>
+                </div>
+
+                <div class="form-field">
+                  <label for="phone" class="label">Teléfono</label>
+                  <input type="text" id="phone" name="phone" class="input" />
+                </div>
               </fieldset>
+              <button class="button button--xl checkout-form__button">
+                Confirmar Orden
+              </button>
             </form>
           </div>
         </div>

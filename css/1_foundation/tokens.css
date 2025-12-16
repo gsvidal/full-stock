@@ -95,11 +95,16 @@
   --font-weight-regular: 400;
   --font-weight-medium: 500;
 
-  --font-size-3-5: .875rem;
+  --font-size-3-5: 0.875rem;
   --font-size-4: 1rem;
 
   --line-height-5: 1.25rem;
   --line-height-6: 1.5rem;
+  --line-height-7: 1.75rem;
+
+  /* Border radius */
+  --rounded-md: 0.375rem;
+  --rounded-3: 0.75rem;
 }
 
 /* Dark Mode */

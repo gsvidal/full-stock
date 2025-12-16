@@ -37,7 +37,9 @@
 @import url('3_components/cart.css');
 
 @import url('3_components/checkout.css');
+@import url('3_components/checkout-form.css');
 @import url('3_components/fieldset.css'); /* Extra but necessary because is used on different pages */
+@import url('3_components/select.css');
 
 
 @import url('3_components/form-field.css');

@@ -1,0 +1,25 @@
+/* Checkout form */
+/* revisar demas label + input como de category-caalog y colocar input container y label classnames */
+
+.checkout-form__button {
+  margin-top: 1.5rem;
+  width: 100%;
+}
+
+.double-form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+@media (min-width: 40rem) {
+  .double-form-field {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+
+  .double-form-field .form-field {
+    width: 100%;
+  }
+}
